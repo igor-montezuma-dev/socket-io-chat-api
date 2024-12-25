@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "build": "npm install "
+    "build": "npm install && npm run build:env",
+    "build:env": "cp .env.production .env"
   },
   "keywords": [],
   "author": "",
